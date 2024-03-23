@@ -105,7 +105,7 @@ public class PacienteController {
         }
         return atencionesMedico;
     }
-    // endpoint para obtener roles activos por usuario
+   
     @GetMapping("/medico/{id}/atenciones/activas")
     public List<Atencion> obtenerAtencionesActivasByMedico(@PathVariable int id) {
         List<Atencion> atencionesMedico = new ArrayList<>();
